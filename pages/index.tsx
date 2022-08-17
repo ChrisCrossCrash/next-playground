@@ -1,39 +1,7 @@
 import { ComponentType, ElementType } from 'react'
 import type { NextPage } from 'next'
-
-type GreenBoxProps = {
-  height: string
-  width: string
-}
-
-const GreenBox = (props: GreenBoxProps) => {
-  return (
-    <div
-      style={{
-        backgroundColor: 'green',
-        height: props.height,
-        width: props.width,
-      }}
-    />
-  )
-}
-
-type RedCircleProps = {
-  radius: string
-}
-
-const RedCircle = (props: RedCircleProps) => {
-  return (
-    <div
-      style={{
-        backgroundColor: 'red',
-        borderRadius: '50%',
-        height: `calc(${props.radius} * 2)`,
-        width: `calc(${props.radius} * 2)`,
-      }}
-    />
-  )
-}
+import GreenBox from '../components/GreenBox'
+import RedCircle from '../components/RedCircle'
 
 type DynamicComponent = {
   componentType: string
