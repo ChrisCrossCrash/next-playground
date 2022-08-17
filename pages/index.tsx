@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
-  return <div>TODO</div>
+  return <div className='centered'>TODO</div>
 }
 
 export default Home
