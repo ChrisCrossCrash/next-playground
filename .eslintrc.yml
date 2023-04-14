@@ -1,3 +1,8 @@
 extends:
   - next/core-web-vitals
   - prettier
+rules:
+  # Without this, things like <meshStandardMaterial roughness={0.3} /> would
+  # trigger a false positive. Check if it's fixed with React 19.
+  # https://github.com/jsx-eslint/eslint-plugin-react/issues/3423
+  react/no-unknown-property: off
