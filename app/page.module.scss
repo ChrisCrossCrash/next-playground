@@ -1,11 +1,4 @@
-@use 'modern-normalize';
-
-body {
-  background-color: black;
-  color: white;
-}
-
-.centered {
+.base {
   display: flex;
   justify-content: center;
   align-items: center;
